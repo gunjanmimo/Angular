@@ -1,8 +1,0 @@
-<h2>Server Section</h2>
-<input type="text" class="form-control" (input)="dataInput($event)" />
-<button (click)="updateServer()">Add server</button>
-<p *ngIf="serverCreated; else noServer">{{ serverName }}</p>
-<ng-template #noServer>
-    <p>No server is created</p>
-</ng-template>
-<app-servers *ngFor="let server of servers"></app-servers>
