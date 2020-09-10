@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
 })
 
 export class ServerComponent {
-
+    id: String = "34A2D"; status: String = "OFFLINE";
+    getWaitedLoad() {
+        return "40 Latency"
+    }
 }

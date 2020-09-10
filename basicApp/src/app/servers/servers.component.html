@@ -1,1 +1,20 @@
-<h1>this is a auto generated server</h1>
+<label>Server Name</label>
+<!-- <input type="text" class="form-control" (input)="onUpdateServerName($event)" /> -->
+<input type="text" class="form-control" [(ngModel)]="serverName" />
+
+<button
+  class="btn btn-primary"
+  [disabled]="!allowNewServer"
+  (click)="updateStatus()"
+  style="margin-top: 20px"
+>
+  Add Server
+</button>
+<!-- <p>{{ serverName }}</p>
+<p>{{ serverCreationStatus }}</p> -->
+<p *ngIf="isServerCreated; else noServer">
+  Server is created with the name {{ serverName }}
+</p>
+<ng-template #noServer>
+  <p>No server is created</p>
+</ng-template>
