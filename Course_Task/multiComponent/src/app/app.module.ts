@@ -1,15 +1,17 @@
-import { ServerComponent } from './server/server.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ServersComponent } from './servers/servers.component';
+import { FirstComComponent } from './first-com/first-com.component';
+import { SecondComComponent } from './second-com/second-com.component';
+import { ThirdComComponent } from './third-com/third-com.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent,
-    ServersComponent
+    FirstComComponent,
+    SecondComComponent,
+    ThirdComComponent
   ],
   imports: [
     BrowserModule
