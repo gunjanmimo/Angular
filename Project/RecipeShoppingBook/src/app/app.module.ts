@@ -1,3 +1,4 @@
+import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { RepcipeListComponent } from './recipes/repcipe-list/repcipe-list.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { HeaderComponent } from './header/header.component';
@@ -17,7 +18,8 @@ import { RecipeItemComponent } from './recipes/repcipe-list/recipe-item/recipe-i
     RepcipeDetailsComponent,
     RecipeItemComponent,
     ShoppingListComponent,
-    RepcipeListComponent
+    RepcipeListComponent,
+    ShoppingEditComponent
 
   ],
   imports: [
