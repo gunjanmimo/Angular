@@ -8,12 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class SecondComComponent implements OnInit {
   companyName = "gunjan paul"
 
-  stdentName: String = ""
-  age: number
-  address: string = ""
+  studentName = '';
+  age = 0
+  address = ""
   constructor() { }
 
   ngOnInit(): void {
+  }
+  updateData() {
+
+  }
+  onUpdateServer(event: any) {
+    this.studentName = (<HTMLInputElement>event).target.value;
   }
 
 }
