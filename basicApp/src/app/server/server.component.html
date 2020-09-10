@@ -1,1 +1,6 @@
-<p>Server with ID {{ id }} is {{ status }} with load {{ getWaitedLoad() }}</p>
+<!-- <p>Server with ID {{ id }} is {{ status }} with load {{ getWaitedLoad() }}</p> -->
+<p>
+  Server with ID {{ id }} is
+  <span [ngStyle]="{ backgroundColor: getColor() }">{{ status }}</span> with
+  load {{ getWaitedLoad() }}
+</p>
